@@ -5,7 +5,7 @@ import hearth from "../assets/hearth.png"
 import comment from "../assets/comment.png"
 import message from "../assets/message.png"
 import save from "../assets/save.png"
-
+import emoji from "../assets/emojy.png"
 
 const Post = ({ userName, profilePic, postPhoto, caption }) => {
     const comments = [
@@ -87,6 +87,16 @@ const Post = ({ userName, profilePic, postPhoto, caption }) => {
                     {/** TimeStamp **/}
                     <p className='text-gray-400 text-xs my-2 '>4 minutes ago</p>
                     {/**  **/}
+                    <div className='border-t-mx-3 my-3'> </div>
+                    <div className='flex justify-between p-1'>
+                        <div className='flex'>
+                            <div className='Btn mr-4'>
+                                <Image src={emoji}/>
+                            </div>
+                            <input className="outline-0" type="text" placeholder='Add a comment...'/>
+                        </div>
+                    <button className='font-bold text-sm text-[#0095f6]' >Post</button>
+                    </div>
                 </div>
             </div>
         </div>
